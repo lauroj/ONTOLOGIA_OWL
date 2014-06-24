@@ -1,0 +1,1019 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-10 "http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <rdf:Description rdf:about="&owl;versionInfo">
+        <versionInfo rdf:datatype="&xsd;float">1.0</versionInfo>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#dicta -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-10;dicta">
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Docente"/>
+        <rdfs:range rdf:resource="&untitled-ontology-10;Materias_Ciclo10_CIS"/>
+        <rdfs:range rdf:resource="&untitled-ontology-10;Materias_Ciclo1_CIS"/>
+        <rdfs:range rdf:resource="&untitled-ontology-10;Materias_Ciclo3_CIS"/>
+        <rdfs:range rdf:resource="&untitled-ontology-10;Materias_Ciclo6_CIS"/>
+        <rdfs:range rdf:resource="&untitled-ontology-10;Materias_Ciclo8_CIS"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#es_dictada_por -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-10;es_dictada_por">
+        <rdfs:range rdf:resource="&untitled-ontology-10;Docente"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Materias_Ciclo10_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Materias_Ciclo1_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Materias_Ciclo3_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Materias_Ciclo6_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Materias_Ciclo8_CIS"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#es_tomada_por -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-10;es_tomada_por">
+        <rdfs:range rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo3_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Materias_Ciclo1_CIS"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#puede_tomar -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-10;puede_tomar">
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo3_CIS"/>
+        <rdfs:range rdf:resource="&untitled-ontology-10;Materias_Ciclo1_CIS"/>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-10;puede_tomar"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo1_CIS"/>
+            </Restriction>
+        </rdfs:domain>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#C.I -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-10;C.I">
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Docente"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo10_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo1_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo3_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo6_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo8_CIS"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#email -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-10;email">
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Docente"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo10_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo1_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo3_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo6_CIS"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo8_CIS"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#AEIRNNR -->
+
+    <Class rdf:about="&untitled-ontology-10;AEIRNNR">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Area"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Area -->
+
+    <Class rdf:about="&untitled-ontology-10;Area">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;UNL"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Carrera -->
+
+    <Class rdf:about="&untitled-ontology-10;Carrera">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;AEIRNNR"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Ciclo10_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Ciclo10_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Malla_Vieja"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Ciclo1_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Ciclo1_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Malla_Nueva"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Ciclo3_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Ciclo3_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Malla_Nueva"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Ciclo6_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Ciclo6_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Malla_Vieja"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Ciclo8_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Ciclo8_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Malla_Vieja"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-10;es_tomada_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo8_CIS"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Docente -->
+
+    <Class rdf:about="&untitled-ontology-10;Docente">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Ingenieria_En_Sistemas"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Electromecanica -->
+
+    <Class rdf:about="&untitled-ontology-10;Electromecanica">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Carrera"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Electronica -->
+
+    <Class rdf:about="&untitled-ontology-10;Electronica">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Carrera"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Estudiantes_Ciclo10_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Estudiantes_Ciclo10_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Ciclo10_CIS"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-10;puede_tomar"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-10;Materias_Ciclo10_CIS"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Estudiantes_Ciclo1_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Estudiantes_Ciclo1_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Ciclo1_CIS"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-10;puede_tomar"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-10;Materias_Ciclo1_CIS"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Estudiantes_Ciclo3_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Estudiantes_Ciclo3_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Ciclo3_CIS"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-10;puede_tomar"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-10;Materias_Ciclo1_CIS"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Estudiantes_Ciclo6_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Estudiantes_Ciclo6_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Ciclo6_CIS"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-10;puede_tomar"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-10;Materias_Ciclo6_CIS"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Estudiantes_Ciclo8_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Estudiantes_Ciclo8_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Ciclo8_CIS"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-10;puede_tomar"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-10;Materias_Ciclo8_CIS"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Geologia -->
+
+    <Class rdf:about="&untitled-ontology-10;Geologia">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Carrera"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Ingenieria_En_Sistemas -->
+
+    <Class rdf:about="&untitled-ontology-10;Ingenieria_En_Sistemas">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Carrera"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Malla_Nueva -->
+
+    <Class rdf:about="&untitled-ontology-10;Malla_Nueva">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Modulo"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Malla_Vieja -->
+
+    <Class rdf:about="&untitled-ontology-10;Malla_Vieja">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Modulo"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materias_Ciclo10_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Materias_Ciclo10_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Ciclo10_CIS"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-10;es_tomada_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo10_CIS"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materias_Ciclo1_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Materias_Ciclo1_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Ciclo1_CIS"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-10;es_tomada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo3_CIS"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materias_Ciclo3_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Materias_Ciclo3_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Ciclo3_CIS"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-10;es_tomada_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo3_CIS"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materias_Ciclo6_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Materias_Ciclo6_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Ciclo6_CIS"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-10;es_tomada_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo6_CIS"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materias_Ciclo8_CIS -->
+
+    <Class rdf:about="&untitled-ontology-10;Materias_Ciclo8_CIS">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Ciclo8_CIS"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Modulo -->
+
+    <Class rdf:about="&untitled-ontology-10;Modulo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-10;Ingenieria_En_Sistemas"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#UNL -->
+
+    <Class rdf:about="&untitled-ontology-10;UNL"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Anteproyectos -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Anteproyectos">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo10_CIS"/>
+        <untitled-ontology-10:es_dictada_por rdf:resource="&untitled-ontology-10;Henry_Paz_Arias"/>
+        <untitled-ontology-10:es_dictada_por rdf:resource="&untitled-ontology-10;Luis_Chamba"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Control_Automatizado -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Control_Automatizado">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo10_CIS"/>
+        <untitled-ontology-10:es_dictada_por rdf:resource="&untitled-ontology-10;Franco_Salcedo"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E1_Ciclo10_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E1_Ciclo10_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo10_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E1_Ciclo1_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E1_Ciclo1_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo1_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E1_Ciclo3_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E1_Ciclo3_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo3_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E1_Ciclo6_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E1_Ciclo6_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo6_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E1_Ciclo8_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E1_Ciclo8_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo8_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E1_MN_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E1_MN_CIS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E1_MV_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E1_MV_CIS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E2_Ciclo10_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E2_Ciclo10_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo10_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E2_Ciclo1_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E2_Ciclo1_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo1_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E2_Ciclo3_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E2_Ciclo3_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo3_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E2_Ciclo6_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E2_Ciclo6_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo6_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E2_Ciclo8_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E2_Ciclo8_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo8_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E2_MN_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E2_MN_CIS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E2_MV_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E2_MV_CIS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E3_Ciclo10_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E3_Ciclo10_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo10_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E3_Ciclo1_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E3_Ciclo1_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo1_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E3_Ciclo3_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E3_Ciclo3_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo3_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E3_Ciclo6_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E3_Ciclo6_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo6_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E3_Ciclo8_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E3_Ciclo8_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo8_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E3_MN_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E3_MN_CIS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E3_MV_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E3_MV_CIS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E4_Ciclo10_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E4_Ciclo10_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo10_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E4_Ciclo1_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E4_Ciclo1_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo1_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E4_Ciclo3_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E4_Ciclo3_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo3_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E4_Ciclo6_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E4_Ciclo6_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo6_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E4_Ciclo8_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E4_Ciclo8_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo8_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E4_MN_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E4_MN_CIS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E4_MV_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E4_MV_CIS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E5_Ciclo10_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E5_Ciclo10_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo10_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E5_Ciclo1_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E5_Ciclo1_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo1_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E5_Ciclo3_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E5_Ciclo3_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo3_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E5_Ciclo6_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E5_Ciclo6_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo6_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E5_Ciclo8_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E5_Ciclo8_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Estudiantes_Ciclo8_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E5_MN_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E5_MN_CIS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#E5_MV_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;E5_MV_CIS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Etica_Informatica -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Etica_Informatica">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo10_CIS"/>
+        <untitled-ontology-10:es_dictada_por rdf:resource="&untitled-ontology-10;Pablo_Ordoñez"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Franco_Salcedo -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Franco_Salcedo">
+        <rdf:type rdf:resource="&untitled-ontology-10;Docente"/>
+        <untitled-ontology-10:dicta rdf:resource="&untitled-ontology-10;Control_Automatizado"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Freddy_Agila -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Freddy_Agila">
+        <rdf:type rdf:resource="&untitled-ontology-10;Docente"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Henry_Cueva -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Henry_Cueva">
+        <rdf:type rdf:resource="&untitled-ontology-10;Docente"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Henry_Paz_Arias -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Henry_Paz_Arias">
+        <rdf:type rdf:resource="&untitled-ontology-10;Docente"/>
+        <untitled-ontology-10:dicta rdf:resource="&untitled-ontology-10;Anteproyectos"/>
+        <untitled-ontology-10:dicta rdf:resource="&untitled-ontology-10;Inteligencia_Artificial"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Hernan_Torres -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Hernan_Torres">
+        <rdf:type rdf:resource="&untitled-ontology-10;Docente"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Inteligencia_Artificial -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Inteligencia_Artificial">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo10_CIS"/>
+        <untitled-ontology-10:es_dictada_por rdf:resource="&untitled-ontology-10;Henry_Paz_Arias"/>
+        <untitled-ontology-10:es_dictada_por rdf:resource="&untitled-ontology-10;Luis_Chamba"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Luis_Chamba -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Luis_Chamba">
+        <rdf:type rdf:resource="&untitled-ontology-10;Docente"/>
+        <untitled-ontology-10:dicta rdf:resource="&untitled-ontology-10;Anteproyectos"/>
+        <untitled-ontology-10:dicta rdf:resource="&untitled-ontology-10;Inteligencia_Artificial"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Luis_Roberto_Jacome -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Luis_Roberto_Jacome">
+        <rdf:type rdf:resource="&untitled-ontology-10;Docente"/>
+        <untitled-ontology-10:dicta rdf:resource="&untitled-ontology-10;Simulacion"/>
+        <untitled-ontology-10:dicta rdf:resource="&untitled-ontology-10;Sistemas_Expertos"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Marco_Ocampo -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Marco_Ocampo">
+        <rdf:type rdf:resource="&untitled-ontology-10;Docente"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Mario_Cueva -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Mario_Cueva">
+        <rdf:type rdf:resource="&untitled-ontology-10;Docente"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia1_Ciclo1_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia1_Ciclo1_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo1_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia1_Ciclo3_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia1_Ciclo3_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo3_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia1_Ciclo6_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia1_Ciclo6_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo6_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia1_Ciclo8_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia1_Ciclo8_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo8_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia2_Ciclo1_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia2_Ciclo1_CIS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia2_Ciclo1_CIS_ -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia2_Ciclo1_CIS_">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo1_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia2_Ciclo3_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia2_Ciclo3_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo3_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia2_Ciclo6_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia2_Ciclo6_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo6_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia2_Ciclo8_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia2_Ciclo8_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo8_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia3_Ciclo1_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia3_Ciclo1_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo1_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia3_Ciclo3_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia3_Ciclo3_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo3_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia3_Ciclo6_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia3_Ciclo6_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo6_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia3_Ciclo8_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia3_Ciclo8_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo8_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia4_Ciclo1_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia4_Ciclo1_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo1_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia4_Ciclo3_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia4_Ciclo3_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo3_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia4_Ciclo6_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia4_Ciclo6_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo6_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia4_Ciclo8_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia4_Ciclo8_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo8_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia5_Ciclo1_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia5_Ciclo1_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo1_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia5_Ciclo3_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia5_Ciclo3_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo3_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia5_Ciclo6_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia5_Ciclo6_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo6_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Materia5_Ciclo8_CIS -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Materia5_Ciclo8_CIS">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo8_CIS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Pablo_Ordoñez -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Pablo_Ordoñez">
+        <rdf:type rdf:resource="&untitled-ontology-10;Docente"/>
+        <untitled-ontology-10:dicta rdf:resource="&untitled-ontology-10;Etica_Informatica"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Rene_Guaman -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Rene_Guaman">
+        <rdf:type rdf:resource="&untitled-ontology-10;Docente"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Simulacion -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Simulacion">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo10_CIS"/>
+        <untitled-ontology-10:es_dictada_por rdf:resource="&untitled-ontology-10;Luis_Roberto_Jacome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jorge/ontologies/2014/5/untitled-ontology-10#Sistemas_Expertos -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-10;Sistemas_Expertos">
+        <rdf:type rdf:resource="&untitled-ontology-10;Materias_Ciclo10_CIS"/>
+        <untitled-ontology-10:es_dictada_por rdf:resource="&untitled-ontology-10;Luis_Roberto_Jacome"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
